@@ -1,0 +1,13 @@
+n, k = map(int,input().split())
+a = list(map(int,input().split()))
+count = 1
+K = k
+
+for i in range(n):
+  
+  if K < a[i]:
+    count += 1
+    K = k
+  K -= a[i]
+
+print(count)
